@@ -1,7 +1,8 @@
-const contacts = require('../db/contacts.json');
+const listContacts = require("./listContacts");
 
-const getContactById = async(id) => {
-    const contact = contacts.find(item => item.id === id)
+async function getContactById(contactId) {
+    const contacts = await listContacts();
+    const contact = contacts.find(item => item.id === contactId);
     if (!contact) {
         return null;
     }
