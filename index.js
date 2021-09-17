@@ -1,5 +1,6 @@
 const contactsOperations = require("./contacts");
 const argv = require('yargs').argv;
+console.log(contactsOperations)
 
 async function invokeAction({ action, id, name, email, phone }) {
   // try {

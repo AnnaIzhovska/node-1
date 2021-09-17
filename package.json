@@ -21,8 +21,10 @@
   "homepage": "https://github.com/AnnaIzhovska/node-1#readme",
   "devDependencies": {
     "nodemon": "^2.0.12"
-   },
+  },
   "dependencies": {
+    "gitignore": "^0.7.0",
+    "uuid": "^8.3.2",
     "yargs": "^17.1.1"
   }
 }
